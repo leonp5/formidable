@@ -1,10 +1,12 @@
 import React from "react";
 import { addProtocol } from "../api/protocols";
+import useSessionState from "../hooks/useSessionState";
 
 function ProtocolForm() {
-  const [author, setAuthor] = React.useState("");
-  const [date, setDate] = React.useState("");
-  const [text, setText] = React.useState("");
+  const [author, setAuthor] = useSessionState("author", "");
+  const [date, setDate] = useSessionState("date", "");
+  const [text, setText] = useSessionState("text", "");
+
   const [errorMsg, setErrorMsg] = React.useState("");
 
   function handleSubmit(event) {

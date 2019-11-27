@@ -4,7 +4,7 @@ import ProtocolForm from "./components/ProtocolForm";
 import Protocols from "./components/Protocols";
 
 function App() {
-  const [showForm, setShowForm] = React.useState(false);
+  const [showForm, setShowForm] = React.useState(true);
 
   return (
     <>

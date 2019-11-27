@@ -15,4 +15,5 @@ Protocol.propTypes = {
   date: PropTypes.string,
   text: PropTypes.string
 };
+
 export default Protocol;
