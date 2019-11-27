@@ -1,4 +1,5 @@
 import React from "react";
+import { addProtocol } from "../api/protocols";
 
 function ProtocolForm() {
   const [author, setAuthor] = React.useState("");
@@ -23,7 +24,7 @@ function ProtocolForm() {
       text
     };
 
-    console.log(protocol, JSON.stringify(protocol));
+    addProtocol(protocol);
   }
 
   return (
